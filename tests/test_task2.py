@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-from universal_pair import UniversalPair
+from universal_pair_package.universal_pair import UniversalPair
 
 
 def test_universal_pair_int():
