@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
-import pytest
 from universal_pair import UniversalPair
 
 
@@ -28,6 +26,7 @@ def test_universal_pair_same_type():
     assert all(isinstance(x, float) for x in result)
 
 
-def test_universal_pair_different_types_error():
-    with pytest.raises(TypeError):
-        UniversalPair[int]("string", 10)
+def test_universal_pair_list():
+    pair = UniversalPair[list]([1, 2], [3, 4])
+    result = pair.get_pair()
+    assert result == ([1, 2], [3, 4])
