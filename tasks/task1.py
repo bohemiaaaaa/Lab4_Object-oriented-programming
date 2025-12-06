@@ -6,7 +6,6 @@ from printer_function import printer
 
 
 def main():
-    # Проверка типа возвращаемого значения
     result = printer("Hello, World!")
     print(f"Тип возвращаемого значения: {type(result)}")
     print(f"Значение возвращаемого значения: {result}")

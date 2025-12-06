@@ -12,7 +12,6 @@ class UniversalPair(Generic[T]):
             raise TypeError(
                 f"Типы first и second должны совпадать: {type(first)} != {type(second)}"
             )
-
         self.first = first
         self.second = second
 
